@@ -1,0 +1,80 @@
+.connexion {
+    background-color: #090909;
+  }
+  
+  .connexion:hover {
+    background-color: #3e3e3e;
+  }
+  
+  .navbar li a:hover {
+    background-color: rgb(233, 231, 231);
+  }
+  
+  .navbar .menu-hamburger {
+    cursor: pointer;
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+  }
+  
+  
+  .NB nav ul li a:hover {
+    font-weight: bold;
+  }
+  
+  .NB nav ul li a.active {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 900px){
+    .navbar {
+      padding: 0;
+  }
+  
+  .navbar .logo {
+      position: absolute;
+      top: 40px;
+      left: 30px;
+  }
+  
+  .navbar .menu-hamburger {
+      display: block;
+  }
+  
+  .nav-links {
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: #ffffff38;
+      backdrop-filter: blur(10px);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -100%;
+      transition: 0.5s ease;
+  }
+  
+  .nav-links.mobile-menu {
+      margin-left: 0;
+  }
+  
+  .nav-links ul {
+      display: flex;
+      flex-direction: column;
+      align-items:  center;
+  }
+  
+  .navbar .nav-links ul li {
+      margin:25px 0;
+      font-size: 1.2em;
+  }
+  
+  .navbar li a:hover {
+    background-color: #000000;
+    color: #fff;
+  }
+}
