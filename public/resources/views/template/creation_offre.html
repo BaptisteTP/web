@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création offre</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/public/image/logo_url-removebg-preview.png">
+</head>
+<body class="h-full">
+    <div class="flex flex-col justify-center items-center h-full">
+        <div class="w-full max-w-2xl mt-12">
+            <div class="bg-white shadow-md rounded px-20 py-20 mb-4">
+                <div class="flex justify-between items-center mb-10">
+                    <img class="h-23" src="/public/image/logo1.png" alt="Logo">
+                    <button class="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline" type="button">&#10229; Retour</button>
+                </div>
+                <div class="flex mt-4 flex-col">
+                    <p class="text-left font-medium text-lg text-gray-900 dark:text-white">Création offre</p>
+                    <hr class="border-black border-2 mb-8">
+                    <div class="flex flex-col">
+                        <label for="nom_etp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nom de l'entreprise*</label>
+                        <input type="text" name="nom" id="nom" placeholder="Entrez le nom de l'entreprise" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:ring focus:border-blue-500" required />
+                    </div>
+                    <div class="mt-4">
+                        <label for="file" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Télécharger un fichier</label>
+                        <label for="file" class="relative w-full cursor-pointer bg-gray-50 border border-dashed border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 focus:ring focus:border-blue-500 h-48">
+                            <input type="file" id="file" name="file" accept=".png, .jpeg, .webm, .jpg" class="hidden">
+                        <span class="absolute inset-y-0 left-0 right-0 flex items-center justify-center text-gray-400 text-center">Importer une image carrée. <br> minimum 256 x 256 pixels. <br> Les formats validés sont .jpg, .png, .webm, .jpeg</span>
+                    </label>
+                    </label>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label for="acti" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Secteur d'activité de l'entreprise*</label>
+                        <input type="text" name="acti" id="acti" placeholder="Entrez le secteur d'activité de l'entreprise" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:ring focus:border-blue-500" required />
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label for="sousacti" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sous-secteur d'activité de l'entreprise</label>
+                        <input type="text" name="sousacti" id="sousacti" placeholder="Entrez le sous-secteur d'activité de l'entreprise" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:ring focus:border-blue-500" />
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label for="nom_offre" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Intitulé du stage*</label>
+                        <input type="text" name="nom_offre" id="nom_offre" placeholder="Entrez le nom de l'offre de stage" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:ring focus:border-blue-500" />
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label for="lieu" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse postale du stage*</label>
+                        <input type="text" name="lieu" id="lieu" placeholder="Entrez l'adresse du stage" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:ring focus:border-blue-500" />
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label for="num" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre de personne à recruter*</label>
+                        <input type="number" name="num" id="num" placeholder="Entrez le nombre de personne à recruter" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:ring focus:border-blue-500" />
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label class="block mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">Niveau d'étude*</label>
+                        <div class="flex items-center mt-2">
+                            <input type="radio" id="option1" name="option" value="option1" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                            <label for="option1" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">A1</label>
+
+                            <input type="radio" id="option2" name="option" value="option" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                            <label for="option2" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">A2</label>
+
+                            <input type="radio" id="option3" name="option" value="option3" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                            <label for="option3" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">A3</label>
+
+                            <input type="radio" id="option4" name="option" value="option4" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                            <label for="option4" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">A4</label>
+
+                            <input type="radio" id="option5" name="option" value="option5" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                            <label for="option5" class="text-sm font-semibold text-gray-900 dark:text-white">A5</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label class="block mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">Spécialité*</label>
+                        <div class="flex items-center mt-2">
+                            <input type="radio" id="info" name="option" value="info" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                            <label for="info" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">Informatique</label>
+
+                            <input type="radio" id="s3e" name="option" value="s3e" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                            <label for="s3e" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">S3E</label>
+
+                            <input type="radio" id="btp" name="option" value="btp" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                            <label for="btp" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">BTP</label>
+
+                            <input type="radio" id="gene" name="option" value="gene" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                            <label for="gene" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">Généraliste</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label class="block mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">Durée du stage*</label>
+                        <div class="flex items-center mt-2">
+                            <div class="flex items-center mt-2">
+                                <input type="radio" id="day" name="option" value="day" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                                <label for="day" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">Jours</label>
+                            </div>
+                            <div class="flex items-center mt-2">
+                                <input type="radio" id="s" name="option" value="s" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                                <label for="s" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">Semaines</label>
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-4">
+                            <input type="number" name="duree" id="duree" placeholder="Entrez la durée du stage" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:ring focus:border-blue-500" required/>
+                        </div>
+                    </div>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const radioNo = document.getElementById('no');
+                            const startDateInput = document.getElementById('start');
+
+                            radioNo.addEventListener('change', function () {
+                                if (radioNo.checked) {
+                                    startDateInput.style.display = 'none';
+                                }
+                            });
+
+                            const radioYes = document.getElementById('yes');
+
+                            radioYes.addEventListener('change', function () {
+                                if (radioYes.checked) {
+                                    startDateInput.style.display = 'block';
+                                }
+                            });
+                        });
+                    </script>
+                    <div class="flex flex-col mt-4">
+                        <label class="block mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">Y a t-il une date de début prévue pour ce poste?*</label>
+                        <div class="flex items-center mt-2">
+                            <div class="flex items-center mt-2">
+                                <input type="radio" id="yes" name="option" value="yes" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                                <label for="yes" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">Oui</label>
+                            </div>
+                            <div class="flex items-center mt-2">
+                                <input type="radio" id="no" name="option" value="no" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                                <label for="no" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">Non</label>
+                            </div>
+                        </div>
+                        <div class="flex flex-col mt-4">
+                            <input type="date" name="start" id="start" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:ring focus:border-blue-500" style="display: none;" />
+                        </div>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label for="sal" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Salaire (par mois)</label>
+                        <input type="number" name="sal" id="sal" placeholder="Entrez le salaire que vous comptez payer" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:ring focus:border-blue-500"/>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label for="compe" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Compétences recherchées pour ce stage*</label>
+                        <input type="text" name="compe" id="compe" placeholder="Entrez les compétences que vous attendez" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:ring focus:border-blue-500" required />
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label for="desc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description du stage*</label>
+                        <textarea name="desc" id="desc" placeholder="Décrivez le poste"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:ring focus:border-blue-500 h-48"></textarea>
+                    </div>
+                    <div class="flex flex-col mt-4">
+                        <label class="block mb-2 mt-4 text-sm font-medium text-gray-900 dark:text-white">Visibilité*</label>
+                        <div class="flex items-center mt-2">
+                            <input type="radio" id="y" name="option" value="y" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                            <label for="y" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">Oui</label>
+
+                            <input type="radio" id="n" name="option" value="n" class="mr-2 focus:ring-blue-500 dark:focus:ring-black-500">
+                            <label for="n" class="text-sm font-semibold text-gray-900 dark:text-white mr-4">Non</label>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="mt-12 flex items-center justify-center mt-4">
+                    <button class="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline" type="button">
+                        Créer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

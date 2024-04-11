@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Offre De Stage</title>
+</head>
+
+<body class="bg-white">
+    <div class="navbar w-full bg-white h-20 flex justify-between items-center z-50">
+        <a href="#"><img src="image/logo.png" class="w-48 object-contain mx-4" alt="Logo"></a>
+        <nav class="block ml-auto mr-5 flex items-center">
+            <div class="nav-links">
+                <ul class="flex list-none m-0 p-0 flex items-center space-x-4">
+                    <li><a class="no-underline text-zinc-950 py-4 px-8 rounded font-bold" href="#Stage">Stage</a></li>
+                    <li><a class="no-underline text-zinc-950 py-4 px-8 rounded" href="#Entreprise">Entreprise</a></li>
+                    <li><a class="no-underline text-zinc-950 py-4 px-8 rounded" href="#Nous-Contacter">Nous contacter</a></li>
+                    <li>
+                        <button class="connexion text-white border-transparent cursor-pointer rounded-3xl py-3 px-6 flex items-center"><svg class="mr-2.5 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                            </svg>
+                            <span class="text-base">Connexion</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-hamburger hidden absolute right-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </div>
+        </nav>
+    </div>
+    <div class="w-full bg-black h-24 flex justify-center items-center">
+        <div class=" rounded-lg bg-white w-8/12 max-w-screen-lg mx-auto p-2">
+            <div class="flex justify-between items-center">
+                <div class="flex-1 pr-4">
+                    <p class="text-gray-600">Trouver un stage</p>
+                    <input type="text" id="recherche" placeholder="Informatique, développement web..." class="border-none focus:outline-none w-full">
+                </div>
+                <div class="p-4 flex items-center">
+                    <button id="recherche" class="p-0 border-none bg-transparent cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search text-black" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="NB">
+      <nav class="flex justify-center mt-2">
+          <ul class="list-none p-0">
+              <li class="inline mr-12"><a href=#>Utilisateurs</a></li>
+              <li class="inline mr-12"><a href=# class="active">Offres de stage</a></li>
+              <li class="inline mr-12"><a href=#>Entreprises</a></li>
+          </ul>
+      </nav>
+    </div>
+    <div class="flex ml-72 mt-20">
+        <div class="flex flex-col">
+          <div class="container mx-auto mb-6">
+            <div class="flex justify-between items-center">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md relative" style="width: 770px; height: 104px;">
+                  <div class="p-4">
+                    <p class="text-sm font-bold">Nom de l'Entreprise</p>
+                    <p class="text-lg font-semibold">Nom de l'Offre de Stage</p>
+                    <div class="flex items-center mt-2">
+                      <div class="flex mr-6 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-journal-text mr-2" viewBox="0 0 16 16">
+                          <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                          <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                          <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+                        </svg>
+                        <p class="text-xs">Niveau</p>
+                      </div>
+                      <div class="flex mr-6 items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-geo-alt mr-2" viewBox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                        <p class="text-xs">Ville</p>
+                      </div>
+                      <p class="text-xs mr-6">jj/mm/aaaa</p>
+                      <p class="text-xs">xxxx</p><p class="text-xs">€</p>
+                    </div>
+                    <div class="absolute center bottom-16 right-4">
+                      <div class="checkbox-wrapper-12">
+                        <div class="cbx">
+                          <input id="cbx-12" type="checkbox"/>
+                          <label for="cbx-12"></label>
+                          <svg width="15" height="14" viewbox="0 0 15 14" fill="none">
+                            <path d="M2 8.36364L6.23077 12L13 2"></path>
+                          </svg>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                          <defs>
+                            <filter id="goo-12">
+                              <fegaussianblur in="SourceGraphic" stddeviation="4" result="blur"></fegaussianblur>
+                              <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></fecolormatrix>
+                              <feblend in="SourceGraphic" in2="goo-12"></feblend>
+                            </filter>
+                          </defs>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="absolute center bottom-4 right-4">
+                      <button class="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full">Voir l'offre</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="ml-16">
+                <button class="bg-blue-800 hover:bg-white hover:text-blue-800 border hover:border-blue-800 text-white font-bold py-2 px-4 rounded-full">Modifier</button>
+                </div>
+                <div class="ml-12">
+                  <button class="btn-supprimer bg-red-500 hover:bg-white hover:text-red-500 border hover:border-red-500 text-white font-bold py-2 px-4 rounded-full">Supprimer</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+<div id="popup" class="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-50 z-50 hidden">
+  <div class="bg-white p-8 rounded-md text-center">
+      <p class="text-lg font-semibold mb-4">Êtes-vous sûr de vouloir supprimer l'offre ?</p>
+      <div class="flex justify-center">
+          <button id="btn-oui" class="bg-red-500 text-white px-4 py-2 rounded-md mr-4">Oui</button>
+          <button id="btn-non" class="bg-gray-500 text-white px-4 py-2 rounded-md">Non</button>
+      </div>
+  </div>
+</div>
+
+<script>
+// Sélection de tous les boutons "Supprimer" avec la classe commune
+const btnSupprimerList = document.querySelectorAll(".btn-supprimer");
+
+btnSupprimerList.forEach(btn => {
+    btn.onclick = function() {
+        const offreDeStage = btn.closest('.flex');
+
+        if (offreDeStage) {
+            document.getElementById("popup").classList.remove("hidden");
+        }
+    };
+});
+
+document.getElementById("btn-oui").onclick = function() {
+    console.log("Suppression confirmée");
+    document.getElementById("popup").classList.add("hidden");
+};
+
+document.getElementById("btn-non").onclick = function() {
+    console.log("Suppression annulée");
+    document.getElementById("popup").classList.add("hidden");
+};
+
+// Sélection de tous les boutons "Accepter" avec la classe commune
+const btnAccepterList = document.querySelectorAll(".btn-accepter");
+
+btnAccepterList.forEach(btn => {
+    btn.onclick = function() {
+        const offreDeStage = btn.closest('.flex');
+
+        if (offreDeStage) {
+            document.getElementById("popup1").classList.remove("hidden");
+        }
+    };
+});
+
+document.getElementById("btn-oui1").onclick = function() {
+    console.log("Acceptation confirmée");
+    document.getElementById("popup1").classList.add("hidden");
+};
+
+document.getElementById("btn-non1").onclick = function() {
+    console.log("Acceptation annulée");
+    document.getElementById("popup1").classList.add("hidden");
+};
+
+// Sélection de tous les boutons "Refuser" avec la classe commune
+const btnRefuserList = document.querySelectorAll(".btn-refuser");
+
+btnRefuserList.forEach(btn => {
+    btn.onclick = function() {
+        const offreDeStage = btn.closest('.flex');
+
+        if (offreDeStage) {
+            document.getElementById("popup2").classList.remove("hidden");
+        }
+    };
+});
+
+document.getElementById("btn-oui2").onclick = function() {
+    console.log("Refut confirmée");
+    document.getElementById("popup2").classList.add("hidden");
+};
+
+document.getElementById("btn-non2").onclick = function() {
+    console.log("Refut annulée");
+    document.getElementById("popup2").classList.add("hidden");
+};
+</script>
+</body>
+
+</html>
